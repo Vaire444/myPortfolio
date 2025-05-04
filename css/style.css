@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    
+    --primary-color-text: #4E3B2A;           /* Sügav kakaopruun – põhitekst, väga hea loetavus */
+    --primary-color-headings: #6E5841;       /* Soe pähklipruun – pealkirjad, tugev visuaalne hierarhia */
+    --primary-color-btn: #849C84;            /* Tuhm roheline – nupud, rahulik ja looduslik kontrast */
+    --primary-color-surface: #DDEBDD;         /* Taimeroheline pind – heledam kui nupp, tumedam kui taust */
+    --primary-color-background: #F7FBF7;      /* Väga hele rohekasvalge – puhas ja õhuline taust */    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open-Sans", sans-serif;
+    
+}
+
+.container {
+    width: 100%;
+    color: var(--primary-color-text);
+    background-color: var(--primary-color-background)
+}
+
+.menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.page-menu {
+    justify-self: end;  
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 55px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--primary-color-headings);
+    border-radius: 10px;
+    background-color: var(--primary-color-surface);
+    margin: 15px;
+    padding: 5px;
+}
+
+.line {
+    height: 5px;
+    width: 75%;
+    background-color: var(--primary-color-headings);
+    border-radius: 10px;
+}
+
+.logo-span {
+    display: inline-block;
+    margin: 25px;
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--primary-color-headings);
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-image img {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 25px;
+}
+
+hr {
+    width: 150px;
+    height: 10px;
+    background-color: var(--primary-color-headings);
+    border-radius: 7px;
+    border: none;
+}
+
+.headline h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: var(--primary-color-headings);
+    margin-top: 5px;
+}
+
+.frame {
+    width: 100%;
+    text-align: center;
+}
+
+.frame img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.my-clients {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+}
+
+.card img {
+    height: 70px;
+    width: auto;
+}
+
+.card h4 {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color-headings);
+
+    font-size: 24px;
+    margin: 5px;
+}
+
+.card span {
+    display: inline-block;
+    margin: 4px;
+    padding: 4px;
+    background-color: var(--primary-color-surface);
+}
+
+.card p {
+    margin: 15px;
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact button{
+    border: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    background-color: var(--primary-color-btn);
+    padding: 15px 51px;
+    color: var(--primary-color-headings);
+    margin: 24px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-media img {
+    margin: 0px 20px 0px 20px;     
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
